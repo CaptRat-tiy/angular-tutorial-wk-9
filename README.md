@@ -1,1 +1,1 @@
-In class code-along to cover the major aspects of Angular 1.  >Angular 1 to come at a later time.
+In class code-along to cover the major aspects of Angular.  (Angular 1 in 01-basic; Angular 2 and beyond to come at a later time.
