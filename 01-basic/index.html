@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Angular 1.x /AngularJS</title>
+
+    <script src="./scripts/angular.js"></script>
+  </head>
+  <body>
+
+    <div class="if">
+        <h2>ng-if</h2>
+        <p ng-if="false">false</p>
+        <p ng-if="true">true</p>
+    </div>
+
+    <div class="model init">
+      <h2>(ng-model and ng-init)</h2>
+      <label>
+        <input type="checkbox" ng-model="checked" ng-init="checked=true">
+        Good Morning?
+      </label>
+      <p>
+        <span ng-if="checked">Liars!  It is not a good morning!</span>
+        <span ng-if="!checked">It may not be a good morning, but it's a great day to code!</span>
+    </p>
+    </div>
+
+    <div class="directives">
+      <div class="bind" ng-init="studentCount = 7">
+        <h2>(ng-bind mechanism)</h2>
+        <p>The student count is: <span  ng-bind="studentCount"></span></p>
+        <h2>( ... and implicit bind {}))</h2>
+        <p>2+2 = {{2+2}}</p>
+
+          <ul>
+            <li>the checkbox above is checked: {{checked}}</li>
+            <li>studentCount is {{studentCount}}</li>
+          </ul>
+      </div>
+
+    </div>
+
+
+  <script src="./scripts/app.js"></script>
+  </body>
+</html>
