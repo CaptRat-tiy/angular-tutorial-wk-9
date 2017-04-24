@@ -10,4 +10,13 @@ function First ($scope) {
   let now = new Date()
   $scope.now = now.toTimeString();
   console.log('$scope.now is: ', $scope.now);
+
+  $scope.updateTime = function() {
+    let now = new Date()
+    $scope.now = now.toTimeString()
+  }
 }
+
+app.controller("BindingController", ['$scope', function($scope){
+
+}])
