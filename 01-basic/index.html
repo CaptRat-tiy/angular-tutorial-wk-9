@@ -8,7 +8,8 @@
     <script src="./scripts/angular.js"></script>
   </head>
   <body>
-
+  <div class="directives">
+    <h1>Directives</h1>
     <div class="if">
         <h2>ng-if</h2>
         <p ng-if="false">false</p>
@@ -39,9 +40,17 @@
             <li>studentCount is {{studentCount}}</li>
           </ul>
       </div>
-
     </div>
+  </div>
 
+  <div class="controllers">
+    <h1>Controllers</h1>
+
+    <div ng-controllers= "FirstCtrl">
+      <h3>Scope and Dependency Injection</h3>
+      <p>The time is now: {{now}}</p>
+    </div>
+  </div>
 
   <script src="./scripts/app.js"></script>
   </body>
