@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="ngApp">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Angular Models and Day 1 Review</title>
+
+    <script src="./scripts/angular.js"></script>
+  </head>
+  <body>
+
+    <h1>ngModel Examples</h1>
+
+  <div ng-controller="ExampleCtrl">
+
+    <h2>Inputs</h2>
+    <p>
+      <label for="txtStrInput">Textbox</label>
+      <input type="text" ng-model="txtStr" name="txtStrInput" ng-change="txtChange()">
+    </p>
+
+    <p>
+      <label for="boolValInput">Checkbox</label>
+      <input type="checkbox" ng-model="boolVal" name="boolValInput">
+    </p>
+
+    <p>
+      <label for="dateValInput">Date</label>
+      <input type="date" ng-model="dateVal" name="dateValInput">
+    </p>
+
+    <p>Radio Buttons:
+      <label>Opt 1: <input type="radio" ng-model="radioVal" value="opt1"></label>
+      <label>Opt 2: <input type="radio" ng-model="radioVal" value="opt2"></label>
+      <label>Opt 3: <input type="radio" ng-model="radioVal" value="opt3"></label>
+    </p>
+
+    <p>Our textStr is {{txtStr}}.</p>
+    <p>Our boolVal is {{boolVal}}.</p>
+    <p>Our dateVal is {{dateVal}}.</p>
+    <p>Our radioVal is {{radioVal}}.</p>
+  </div>
+<div class="sibling controllers">
+  <h2>Sibling Controllers</h2>
+  <div ng-controllers="Ctrl1">
+    <p ng-bind="testVar"></p>
+  </div>
+  <div ng-controller="Ctrl2"
+    <p ng-bind="testVar"></p>
+  ></div>
+</div>
+
+<script src="./scripts/app.js"></script>
+</body>
+</html>
