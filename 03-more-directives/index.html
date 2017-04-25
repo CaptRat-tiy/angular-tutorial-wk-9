@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="moreDirectivesApp">
+  <head>
+    <meta charset="utf-8">
+    <title>More Angular Directives</title>
+    <script src="./scripts/angular.js"></script>
+  </head>
+  <body>
+    <h1>More Angular Directives</h1>
+
+    <div ng-controller="IfShowHideCtrl as ishCtr">
+      <h2>ng-if, ng-show, ng-hide</h2>
+      <input type="checkbox" ng-model="ishCtr.checked">
+      <p ng-if="ishCtr.checked">ctrl.checked is checked so ng-show is true</p>
+      <p ng-show="ishCtr.checked">ctrl.checked is checked so ng-show is true</p>
+      <p ng-hide="ishCtr.checked">ctrl.checked is not checked so ng-hide is false</p>
+      inspect elements
+    </div>
+
+    <div ng-controller="RepeatCtrl as rCtrl">
+      <h2>ng-repeat</h2>
+      <p ng-repeat="i in rCtrl.ourList">Hello, {{i.name}}!  (At index [{{ $index}}].  This is the last item?  {{$last}})</p>
+    </div>
+
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>

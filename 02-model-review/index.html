@@ -40,15 +40,38 @@
     <p>Our dateVal is {{dateVal}}.</p>
     <p>Our radioVal is {{radioVal}}.</p>
   </div>
-<div class="sibling controllers">
-  <h2>Sibling Controllers</h2>
-  <div ng-controllers="Ctrl1">
-    <p ng-bind="testVar"></p>
+
+  <div class="siblingAndNestedControllers">
+    <h2>Sibling Controllers</h2>
+
+    <div ng-controller="Ctrl1">
+      <p ng-bind="testVar"></p>
+    </div>
+
+    <div ng-controller="Ctrl2"
+      <p ng-bind="testVar"></p>
+    </div>
+
+    <h2>Nested Controllers</h2>
+    <div ng-controller="Ctrl1">
+      <p ng-bind="testVar"></p>
+      <div ng-controller="Ctrl2"
+        <p ng-bind="testVar"></p>
+      ></div>
+    </div>
   </div>
-  <div ng-controller="Ctrl2"
-    <p ng-bind="testVar"></p>
-  ></div>
-</div>
+
+  <div class="controllerAs">
+    <h2>Controller As (aka aliases)</h2>
+    <div ng-controller="Ctrl1as as c1">
+      <p ng-bind="c1.testVar"></p>
+      <div ng-controller="Ctrl2as as c2">
+        <p ng-bind="c2.testVar"></p>
+      </div>
+    </div>
+  </div>
+
+
 
 <script src="./scripts/app.js"></script>
 </body>
