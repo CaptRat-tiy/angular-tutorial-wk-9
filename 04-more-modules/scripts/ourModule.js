@@ -1,6 +1,6 @@
 "use strict"
 
-var ourModuleModule = angular.module('morModulesApp', [])
+var ourModuleModule = angular.module('moreModulesApp', [])
 
 ourModuleModule.controller('MoreModulesModule', MoreModules)
 

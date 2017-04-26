@@ -5,7 +5,13 @@
 
     <title>More Modules</title>
 
+    <link rel="stylesheet" href="http://mbenford.github.io/ngTagsInput/css/ng-tags-input.min.css" />
     <script src="./scripts/angular.js"></script>
+    <script src="http://mbenford.github.io/ngTagsInput/js/ng-tags-input.min.js"></script>
+    <script src="./scripts/ourModule.js"></script>
+    <script src="./scripts/app.js"></script>
+
+
   </head>
   <body>
     <h1>More Angular Modules</h1>
@@ -14,8 +20,9 @@
       {{ctrl.helloWorld}}
     </div>
 
+    <div ng-controller="TagsCtrl as tagsCtrl">
+      <tags-input ng-model="tagsCtrl.tags"></tags-input>
+    </div>
 
-  <script src="./scripts/ourModule.js"></script>
-  <script src="./scripts/app.js"></script>
   </body>
 </html>

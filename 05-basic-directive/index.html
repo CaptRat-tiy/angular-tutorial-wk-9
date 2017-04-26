@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Basic Directives</title>
+    <script src="./scripts/angular.js"></script>
+  </head>
+  <body ng-controller="SuperDuckCtrl">
+
+    <h1>Basic Directives</h1>
+    <div>
+      <h2>attribute</h2>
+      <div super-duck="" duckname="Donald Duck"></div>
+    </div>
+    <div>
+      <h2>classname</h2>
+      <div class="super-duck" duckname-"Daffy Duck"></div>
+    </div>
+    <div>
+      <h2>element</h2>
+      <super-duck duckname="Daddy Duck" />
+    </div>
+    <div>
+      <h2>(tag, without a name)</h2>
+      <super-duck />
+    </div>
+
+    <script src="./scripts/app.js"></script>
+  </body>
+</html>
